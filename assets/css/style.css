@@ -1,0 +1,238 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+/* Global */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: #efefef;  
+}
+
+.btn-custom {
+  border-radius: 0;
+  background-color: rgb(243, 200, 4);
+  color: rgb(20, 71, 122);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover {
+  color: rgb(15, 54, 94);
+  background-color: rgb(250, 206, 10);
+}
+
+.heading {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(20, 71, 122);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;  
+}
+
+/* Navbar */
+
+.bahasa {
+  padding-left: 6px;
+  border-left: solid thin rgb(217, 179, 5);
+}
+header.main-header {
+  position: relative;
+  z-index: 99;
+}
+.logo-pens img {
+  height: 75px;
+}
+.mainNav {
+  background-color: rgb(20, 71, 122);
+  box-shadow: 0 4px 7px 2px rgba(0, 0, 0, 0.2);
+  height: 55px;  
+}
+.mainNav li.nav-item {
+  padding: 0 6px;
+}
+
+.mainNav li.nav-item a {
+  color: #ddd;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+.mainNav li.nav-item.submission a {
+  color: rgb(243, 200, 4);
+  font-weight: 700;
+}
+.mainNav .navbar-brand img {
+  height: 39px;
+}
+.topnav {
+  background-color: rgb(243, 200, 4);
+  height: 35px;
+}
+.topnav li.nav-item a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+.topnav li:nth-child(4) {
+  padding-right: 6px;
+}
+/* end of Navbar */
+
+/* Carousel */
+.carousel {
+  margin-top: -90px;
+}
+
+.carousel-item {
+  height: 100vh;
+  text-shadow: 2px 2px 4px #333;
+  transition: transform 2s ease, opacity 0.5s ease-out;
+}
+
+.carousel-item img {
+  width: 100%;  
+}
+/* end of Carousel */
+
+/* Sections */
+section {
+  padding: 72px 0;
+  background-color: #fafafa;
+}
+
+section.akademik .card {
+  border: none;
+}
+
+section.akademik img {
+  width: auto;
+  height: 240px;
+}
+
+section.berita .media img {
+  height: 96px;
+}
+
+section.berita ul li.media {
+  margin-bottom: 18px;
+}
+
+/* end of Sections */
+
+/* Sub-Sections */
+.sub-section {
+  background-color: rgb(20, 71, 122);
+  padding: 56px 0;
+}
+
+.sub-section a.btn-custom {
+  font-size: 16px;
+  float: right;
+}
+
+.sub-section#stayconnected h1 {
+  color: rgb(243, 200, 4);
+}
+
+.sub-section#stayconnected a {
+  font-size: 48px;
+}
+
+.sub-section#stayconnected a.btn:hover {
+  color: rgb(243, 200, 4) !important;
+}
+/* end of Sub-Sections */
+
+/* Main Content */
+section.page-header .container {
+  position: relative;
+  background-color: rgb(20, 71, 122);
+}
+.page-header .page-img {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  bottom: 0;  
+}
+.page-header .page-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;  
+}
+.page-header .page-content {
+  display: flex;
+  flex-direction: column-reverse;  
+  min-height: 320px;
+  max-width: 40%;   
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+.page-header .page-content .page-title {
+  overflow-wrap: normal;
+}
+.page-header .page-content nav ol.breadcrumb{
+  background-color: transparent;  
+  font-size: 14px;  
+  margin: 12px 0;
+  padding: 0;      
+}
+.page-header .page-content nav ol.breadcrumb li.breadcrumb-item::before{
+  color: rgb(243, 200, 4);
+}
+.page-header .page-content nav ol.breadcrumb li.breadcrumb-item a{
+  color: rgba(243, 200, 4, .8);
+  font-weight: 300;
+  text-decoration: none;
+}
+.page-header .page-content nav ol.breadcrumb li.breadcrumb-item a:hover{
+  font-weight: 400;  
+}
+.page-header .page-content nav ol.breadcrumb li.breadcrumb-item.active{
+  color: rgb(243, 200, 4);
+  font-weight: 700;
+}
+
+
+/* end of Main Content */
+
+/* Footer */
+footer {
+  background-color: rgb(20, 71, 122);
+  height: 400px;  
+}
+
+footer span {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+footer p,
+footer a {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+}
+
+footer a:hover {
+  color: rgb(243, 200, 4);
+}
+
+footer .stayconnected a {
+  font-size: 24px;
+}
+
+footer .stayconnected a.btn:hover {
+  color: rgb(243, 200, 4) !important;
+}
+
+/* end of Footer */
